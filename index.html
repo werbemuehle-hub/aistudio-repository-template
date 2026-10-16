@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synapse — Denkraum für Systeme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a class="brand" href="#top" aria-label="Synapse Startseite"><span class="brand-mark">S</span>synapse</a>
+        <div class="nav-links">
+          <a href="#arbeitsraum">Arbeitsraum</a>
+          <a href="#prinzip">Prinzip</a>
+          <a href="#system">System</a>
+        </div>
+        <button class="menu-button" aria-label="Menü öffnen">☰</button>
+      </nav>
+
+      <section class="hero" id="top">
+        <div class="eyebrow"><span></span> Denkraum / 01</div>
+        <h1>Denken, das<br /><em>weiterläuft.</em></h1>
+        <p class="hero-copy">Wo menschliche Klarheit auf automatisierte Systeme trifft, entsteht Raum für die Arbeit, die wirklich zählt.</p>
+        <a class="button" href="#arbeitsraum">System erkunden <b>↘</b></a>
+        <p class="scroll-note">Scroll to explore <span>↓</span></p>
+      </section>
+
+      <section class="brain-section" id="prinzip" aria-labelledby="brain-title">
+        <div class="section-intro">
+          <p class="eyebrow"><span></span> Ein Gedanke, zwei Modi</p>
+          <h2 id="brain-title">Klar strukturieren.<br />Frei verbinden.</h2>
+          <p>Ein gemeinsamer Arbeitsraum für lineare Entscheidungen und die Dynamik dazwischen.</p>
+        </div>
+        <div class="brain-visual" aria-label="Visualisierung zweier Denkweisen, verbunden durch Datenimpulse">
+          <div class="hemisphere left-brain">
+            <span class="hemisphere-label">01 / Analyse</span>
+            <div class="grid-card c1"><i></i><i></i><i></i></div>
+            <div class="grid-card c2"><i></i><i></i><i></i></div>
+            <div class="process"><b>Input</b><span></span><b>Logik</b><span></span><b>Output</b></div>
+          </div>
+          <div class="signal" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            <div class="bolt">ϟ</div>
+          </div>
+          <div class="hemisphere right-brain">
+            <span class="hemisphere-label">02 / Automation</span>
+            <svg viewBox="0 0 400 260" role="img" aria-label="Neuronales Netz">
+              <g class="links"><path d="M52 70L150 45M52 70L150 128M52 190L150 128M52 190L150 215M150 45L250 92M150 128L250 92M150 128L250 180M150 215L250 180M250 92L345 55M250 92L345 135M250 180L345 135M250 180L345 215"/></g>
+              <g class="nodes"><circle cx="52" cy="70" r="9"/><circle cx="52" cy="190" r="9"/><circle cx="150" cy="45" r="9"/><circle cx="150" cy="128" r="12"/><circle cx="150" cy="215" r="9"/><circle cx="250" cy="92" r="12"/><circle cx="250" cy="180" r="12"/><circle cx="345" cy="55" r="9"/><circle cx="345" cy="135" r="12"/><circle cx="345" cy="215" r="9"/></g>
+            </svg>
+            <p class="automation">auto<span>→</span>flow</p>
+          </div>
+        </div>
+        <p class="meaning"><b>Menschliches Denken</b><i>+</i><b>Automatisierung</b><i>+</i><b>Systeme</b></p>
+      </section>
+
+      <section class="workspace" id="arbeitsraum">
+        <div class="workspace-title"><p class="eyebrow"><span></span> Live Arbeitsraum</p><h2>Vom Gedanken<br />zum <em>Fluss.</em></h2></div>
+        <div class="flow-card" id="system">
+          <div class="flow-head"><span>PROJEKT: NORDSTERN</span><button id="flowToggle" aria-pressed="false"><i></i> Automatisierung aktivieren</button></div>
+          <div class="flow-body">
+            <article class="flow-step"><small>01 / Mensch</small><h3>Kontext<br />definieren</h3><p>Erfahrung, Intuition und das Zielbild geben die Richtung vor.</p><span class="step-dot"></span></article>
+            <article class="flow-step"><small>02 / System</small><h3>Signale<br />verbinden</h3><p>Informationen werden sichtbar, verknüpft und in Bewegung gesetzt.</p><span class="step-dot"></span></article>
+            <article class="flow-step"><small>03 / Flow</small><h3>Wirkung<br />entfalten</h3><p>Wiederkehrendes läuft weiter. Aufmerksamkeit bleibt beim Wesentlichen.</p><span class="step-dot"></span></article>
+          </div>
+          <p class="flow-status" id="flowStatus">Bereit für Ihren ersten Impuls.</p>
+        </div>
+      </section>
+
+      <section class="closing"><p class="eyebrow"><span></span> Ihre nächste Verbindung</p><h2>Systeme sollen<br /><em>mitdenken.</em></h2><a class="button light" href="mailto:hallo@synapse.example">Gespräch beginnen <b>↗</b></a></section>
+      <footer><a class="brand" href="#top"><span class="brand-mark">S</span>synapse</a><span>© 2024 / Human systems, thoughtfully made.</span><a href="#top">Nach oben ↑</a></footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
